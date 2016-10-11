@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2016 Math Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+  </head>
+  <body>
+    <section>
+      <div id="welcome">
+        <h1> Math Quiz</h1>
+
+        <h2> There are 10 questions in total and 2 players take turns to answer 5 questions. </h2>
+
+        <input type="button" name="start" value="Start" id="start" />
+      </div>
+
+      <div id = 'quiz'>
+        <h4 id="p1Score">test</h4>
+        <h4 id="p2Score">test</h4>
+        <h3 id="qnsId"></h3>
+
+        <h3 id="question"></h3>
+
+        <form>
+          <label id=ans0>
+            <input type="radio" name="answer" value="0" id="ans0"> <span id="choice0"></span> </input>
+          </label>
+          <label id=ans1>
+            <input type="radio" name="answer" value="1" id="ans1"> <span id="choice1"></span> </input>
+          </label>
+          <label id=ans2>
+            <input type="radio" name="answer" value="2" id="ans2"> <span id="choice2"></span> </input>
+          </label>
+          <label id=ans3>
+            <input type="radio" name="answer" value="3" id="ans3"> <span id="choice3"></span> </input>
+          </label>
+          <br>
+          <input type="button" name="next" value="Next Question" id="next" />
+        </form>
+
+      </div>
+
+    </section>
+
+     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+     <script src="script.js" charset="utf-8"></script>
+     </div>
+  </body>
+</html>
