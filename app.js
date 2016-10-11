@@ -9,6 +9,7 @@ var port = 4000
 // middleware for all request
 // running express with egs
 app.set('view engine', 'ejs')
+app.use(express.static(__dirname + 'css'))
 
 // app.use('/', express.static(path.join(__dirname, 'views')))
 

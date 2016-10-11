@@ -146,4 +146,3 @@ $(document).ready(function () {
     p2Score.textContent = ('Player 2 Score: ' + score2)
   }
 })
- 
