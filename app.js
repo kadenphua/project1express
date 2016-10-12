@@ -10,8 +10,6 @@ app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'))
 
 // set the require routes
-var routes = require('./routes/index')
-
 var user_routes = require('./routes/users')
 
 var posts = require('./routes/posts')
@@ -23,6 +21,7 @@ app.get('/', function (req, res) {
 
 app.use('/posts', posts)
 
+app.use('/users', user_routes)
 // take this out from app.js
 
 // listening to the opened port
