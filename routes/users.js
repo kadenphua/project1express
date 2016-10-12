@@ -9,15 +9,11 @@ router.get('/contact', function(req, res) {
 })
 
 router.get('/', function(req, res) {
-  res.send('hello users')
+  res.send('users landing page')
 })
 
 router.get('/about', function(req, res) {
-  res.send('about pages')
-})
-
-router.get('/hello', function(req, res) {
-  res.send('hello')
+  res.send('about users pages')
 })
 
 module.exports = router

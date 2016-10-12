@@ -9,20 +9,13 @@ router.get('/contact', function(req, res) {
 })
 
 router.get('/', function(req, res) {
-  res.send('hello world')
+  res.send('this is a post landing page')
 })
 
 router.get('/about', function(req, res) {
   res.send('about pages')
 })
 
-router.get('/hello', function(req, res) {
-  res.send('hello')
-})
-
-router.get('/new', function(req, res) {
-  res.send('new page')
-})
 // :name is just a variable, it can be test or userID
 // must be at the end
 router.get('/:name', function(req, res) {
