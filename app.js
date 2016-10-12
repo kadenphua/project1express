@@ -9,8 +9,7 @@ var port = 4000
 // middleware for all request
 // running express with egs
 app.set('view engine', 'ejs')
-app.use('/css', express.static(__dirname + '/css'))
-
+app.use(express.static(__dirname + '/public'))
 // app.use('/', express.static(path.join(__dirname, 'views')))
 
 // app.use(function (req, res, next) {
@@ -25,21 +24,21 @@ var user_routes = require('./routes/users')
 var posts = require('./routes/posts')
 
 // set the middleware for routes
-app.get('/', function (req, res) {
-  var tas = ['kailing', 'glen']
-  res.render('index', {sth: 'Kaden Phua', taslist: tas})
-})
+// app.get('/', function (req, res) {
+//   var tas = ['kailing', 'glen']
+//   res.render('index', {sth: 'Kaden Phua', taslist: tas})
+// })
+//
+// app.get('/about', function (req, res) {
+//   res.render('about', {sth: 'xxx'})
+// })
 
-app.get('/about', function (req, res) {
-  res.render('about', {sth: 'xxx'})
-})
-
-app.get('/contact', function (req, res) {
-  res.render('contact', {sth: '12123812391'})
-})
+// app.get('/contact', function (req, res) {
+//   res.render('contact', {sth: '12123812391'})
+// })
 // app.use('/', routes)
 // app.use('/users', user_routes)
-// app.use('/posts', posts)
+app.use('/posts', posts)
 
 // take this out from app.js
 
